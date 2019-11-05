@@ -9,7 +9,9 @@ public class MainActivity extends MediaActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_photo_editor);
+        Intent intent = new Intent(MainActivity.this, PhotoEditorActivity.class);
+        intent.putExtra("selectedImagePath", selectedImagePath);
+        startActivity(intent);
     }
 
     public void openUserGallery(View view) {
