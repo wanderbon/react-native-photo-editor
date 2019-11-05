@@ -9,7 +9,7 @@ public class MainActivity extends MediaActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_main_photo_edit_image);
+        setContentView(R.layout.activity_photo_editor);
     }
 
     public void openUserGallery(View view) {
